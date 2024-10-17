@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar - RPG DDS</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <form action="register.php" method="post">
+        <input type="text" name="username" placeholder="Usuário" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Senha" required>
+
+        <h3>Criar Ficha</h3> <!-- Título da ficha -->
+        <input type="text" name="nome_personagem" placeholder="Nome do Personagem" required>
+        <input type="number" name="idade" placeholder="Idade">
+        <input type="text" name="genero" placeholder="Gênero">
+        <textarea name="aparencia" placeholder="Aparência"></textarea>
+        <textarea name="historia" placeholder="História"></textarea>
+        <input type="text" name="raca" placeholder="Raça">
+        <textarea name="habilidade1" placeholder="Habilidade 1"></textarea>
+        <textarea name="habilidade2" placeholder="Habilidade 2"></textarea>
+        <textarea name="habilidade3" placeholder="Habilidade 3"></textarea>
+        <textarea name="poder1" placeholder="Poder 1"></textarea>
+        <textarea name="poder2" placeholder="Poder 2"></textarea>
+        <textarea name="poder_unico" placeholder="Poder Único"></textarea>
+        <textarea name="arma_descricao" placeholder="Descrição da Arma"></textarea>
+        <textarea name="arma_poder" placeholder="Poder da Arma"></textarea>
+        <textarea name="pet_aparencia" placeholder="Aparência do Pet"></textarea>
+        <textarea name="pet_poder" placeholder="Poder do Pet"></textarea>
+        
+        <button type="submit">Registrar</button>
+        <p><a href="login.php">Já tem uma conta? Faça login</a></p>
+    </form>
+</body>
+</html>

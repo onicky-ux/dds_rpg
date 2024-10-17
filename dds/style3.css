@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.catalogo {
+    padding: 20px;
+}
+
+.catalogo h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sistema-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.sistema-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.sistema-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.sistema-item:hover img {
+    transform: scale(1.1);
+}
+
+.sistema-item p {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+}

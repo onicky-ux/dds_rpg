@@ -1,0 +1,117 @@
+/* Estilos gerais da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif; /* Tipografia medieval */
+    background: url('reg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Título Centralizado e Responsivo */
+
+ h3 {
+    text-align: center;
+    color: #f0e6d6; /* Cor de pergaminho antigo */
+    text-shadow: 2px 2px 5px #000;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Formulário estilo pergaminho */
+form {
+    background: url('parchment-texture.jpg') no-repeat center center;
+    background-size: contain;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #a0522d;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo dos inputs */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #8b4513; /* Borda marrom */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparência */
+    color: #333;
+    font-size: 16px;
+    font-family: 'Cinzel', serif;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="number"]::placeholder, textarea::placeholder {
+    color: #666;
+}
+
+/* Estilo para os textareas */
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Botão de registrar */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b22222; /* Cor de botão fantasia */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Cinzel', serif;
+}
+
+button:hover {
+    background-color: #8b0000;
+}
+
+/* Link de login */
+p {
+    text-align: center;
+    margin-top: 10px; /* Ajustado para alinhar logo após o botão */
+}
+
+a {
+    color: #b22222;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Título para a seção de ficha */
+h3 {
+    font-size: 28px;
+    color: #f0e6d6;
+    margin-top: 40px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* Responsividade - ajuste em telas menores */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    h2, h3 {
+        font-size: 28px;
+    }
+}
